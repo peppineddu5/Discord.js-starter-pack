@@ -3,7 +3,7 @@ You can use this starter pack for your next project
 ## Setup
 Download [Node.js](https://nodejs.org/en/download/).
 
-Run this followed commands:
+Run these following commands:
 ``` bash
 # clone the repository
 git clone https://github.com/peppineddu5/Discord.js-starter-pack.git
