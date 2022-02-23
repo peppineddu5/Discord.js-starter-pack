@@ -40,5 +40,5 @@ client.on("messageCreate", msg => {
 
     commandsAlias.execute(msg, args);
 })
-
+//the token are in the config.js
 client.login(config.TOKEN);
