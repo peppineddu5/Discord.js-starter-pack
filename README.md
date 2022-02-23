@@ -7,6 +7,8 @@ Run these following commands:
 ``` bash
 # clone the repository
 git clone https://github.com/peppineddu5/Discord.js-starter-pack.git
+# open the folder
+cd Discord.js-starter-pack
 # Install dependencies (only the first time)
 npm install
 # Run the code to start nodemon
