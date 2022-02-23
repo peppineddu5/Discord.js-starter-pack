@@ -1,2 +1,3 @@
 # Discord.js-starter-pack
-starter pack for discord.js
+You can use this starter pack for your next project
+#try
