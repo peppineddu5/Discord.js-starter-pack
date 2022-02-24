@@ -3,6 +3,9 @@ global.client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD
 const config = require("./config.json");
 require("./error/error.js");
 
+const disbut = require('discord-buttons');
+disbut(client);
+
 const fs = require("fs");
 
 client.commands = new Collection();
@@ -26,7 +29,7 @@ fs.readdir("./events", (err, files) => {
     });
 });
 
-client.on("messageCreate", msg => {
+client.on("message", msg => {
     //Prefix
     global.prefix = "!";
 
@@ -37,8 +40,10 @@ client.on("messageCreate", msg => {
     if (!client.commands.has(command) && !client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(command))) return;
 
     const commandsAlias = client.commands.get(command) || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(command));
-
+    
     commandsAlias.execute(msg, args);
+
 })
+
 //the token are in the config.js
 client.login(config.TOKEN);
